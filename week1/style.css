@@ -1,0 +1,308 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*** CSS Style start here ***/
+*,
+*:before,
+*:after {
+  text-align: left;
+  letter-spacing: 0px;
+  color: #000000;
+  font: normal normal normal 24px/36px Noto Sans;
+  opacity: 1;
+}
+
+.wrap {
+  margin: 0 360px;
+}
+
+.header {
+  margin-top: 47px;
+  border-bottom: 2px solid black;
+}
+.header h1 {
+  width: 264px;
+  font: normal normal normal 80px/94px Roboto;
+  margin-bottom: 17px;
+}
+
+.profile {
+  margin-top: 48px;
+}
+
+.profile img {
+  width: 324px;
+  height: 324px;
+  background: transparent url("img/photo-1536180931879-fd2d652efddc.png") 0% 0%
+    no-repeat padding-box;
+}
+
+.profile h2 {
+  font: normal normal normal 32px/43px Noto Sans;
+  margin-top: 48px;
+  border-bottom: 2px solid black;
+  padding-bottom: 8px;
+}
+
+.profile span {
+  font: normal normal medium 24px/28px Roboto;
+  color: #a00404;
+}
+
+.profile-details {
+  margin-top: 16px;
+}
+
+.profile-details p {
+  margin-bottom: 24px;
+}
+
+.profile-details span {
+  display: block;
+}
+
+.edu {
+  margin-top: 48px;
+  border-bottom: 1px solid #000000;
+}
+
+.edu h2 {
+  font: normal normal normal 32px/43px Noto Sans;
+  margin-left: 6px;
+}
+
+.edu span {
+  font: normal normal medium 24px/28px Roboto;
+  color: #a00404;
+  margin-left: 16px;
+}
+
+.edu-details {
+  margin-top: 16px;
+}
+
+.edu-details p {
+  margin-bottom: 24px;
+}
+
+.footer1 {
+  margin-top: 48px;
+  background: #415165 0% 0% no-repeat padding-box;
+  padding-bottom: 36px;
+}
+
+.footer1 h2,
+.footer2 h2 {
+  padding-top: 24px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid white;
+  font: normal normal medium 32px/45px PingFang TC;
+  color: #ffffff;
+  width: 996px;
+  text-align: center;
+  margin: 0px auto 40px;
+}
+
+.footer1 span,
+.footer2 span {
+  font: normal normal medium 24px/28px Roboto;
+  color: #ffffff;
+  margin-left: 16px;
+}
+
+.footer1 .content {
+  width: 300px;
+  margin-left: 545px;
+  border-left: 1px solid #96a9c4;
+}
+
+.footer1 .content p {
+  font: normal normal medium 24px/36px Roboto;
+  margin: 0px 0px 20px 24px;
+}
+
+.work {
+  margin-top: 72px;
+}
+
+.work h2 {
+  font: normal normal normal 32px/43px Noto Sans;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #000000;
+}
+
+.work span {
+  font: normal normal medium 24px/28px Roboto;
+  color: #a00404;
+  margin-left: 16px;
+}
+
+.work .work-details {
+  border-left: 1px solid #96a9c4;
+  margin-left: 24px;
+  padding-left: 24px;
+  margin-top: 16px;
+}
+
+.work h3 {
+  font: normal normal normal 24px/36px Noto Sans;
+}
+
+.work img {
+  margin: 8px 0px;
+}
+
+.work p {
+  font: normal normal normal 20px/30px Noto Sans;
+  margin-bottom: 24px;
+}
+
+.work .work-details h3 {
+  margin-top: 24px;
+}
+
+.footer2 {
+  background: #415165 0% 0% no-repeat padding-box;
+  padding: 24px 0px 36px 0px;
+}
+
+.footer2 p {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.footer2 .footer2-link {
+  display: flex;
+  justify-content: center;
+}
+
+.footer2 img {
+  margin-right: 24px;
+}
