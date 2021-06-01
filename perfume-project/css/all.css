@@ -390,6 +390,10 @@ p:lang(ch) {
 .content ul li p {
   padding-bottom: 10px;
 }
+.content ul li a {
+  color: #916019;
+  margin-top: 16px;
+}
 
 .content-long {
   margin: 0 auto;
@@ -434,6 +438,10 @@ p:lang(ch) {
 .content-long ul li p {
   padding-bottom: 10px;
 }
+.content-long ul li a {
+  color: #916019;
+  margin-top: 16px;
+}
 .content-long ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -467,6 +475,7 @@ p:lang(ch) {
           align-items: center;
   background: #e0e0e0;
   height: 728px;
+  margin-bottom: 60px;
 }
 .promote img {
   width: 350px;
@@ -511,4 +520,62 @@ p:lang(ch) {
   width: 100%;
   height: 100%;
   background: rgba(128, 128, 128, 0.5);
+}
+
+.content-en {
+  margin: 0 auto;
+  width: 60%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.content-en img {
+  width: 555px;
+  height: 555px;
+}
+.content-en ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 555px;
+  height: 555px;
+  padding: 110px;
+}
+.content-en ul li h2 {
+  padding-bottom: 10px;
+}
+.content-en ul li p {
+  padding-bottom: 10px;
+}
+.content-en ul li a {
+  color: #916019;
+  margin-top: 16px;
+}
+.content-en img {
+  width: 730px;
+  height: 520px;
+}
+.content-en ul {
+  width: 350px;
+  padding: 10% 0;
+}
+.content-en ul h4 {
+  margin-bottom: 16px;
 }
