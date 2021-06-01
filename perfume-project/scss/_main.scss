@@ -1,0 +1,89 @@
+.container {
+  width: $main-width;
+}
+
+.header {
+  width: 100%;
+  padding: 10px 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      display: block;
+      color: $gray;
+      text-align: center;
+      padding: 10px;
+      span {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.subscribe {
+  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/index10.jpg");
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 60px;
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 405px;
+    padding-top: 312px;
+    a {
+      width: 350px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: $brown;
+      border: 2px solid #916000;
+      padding-right: 15px;
+      input {
+        width: 70%;
+        height: 60px;
+      }
+    }
+  }
+}
+
+.footer {
+  width: 100%;
+  height: 80px;
+  background: $brown;
+  margin: 0 auto;
+  padding: 28px 20%;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  h6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 128px;
+      height: auto;
+      margin-right: 20px;
+    }
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li {
+      margin-right: 36px;
+      a {
+        padding: 10px;
+        color: white;
+      }
+    }
+  }
+}

@@ -6,12 +6,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>香水電商</title>
-    <link rel="stylesheet" href="scss/all.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#content").load("pages/home.html");
+            $("#product").click(function () {
+                $("#content").load("pages/product.html");
+            });
+            $("#login").click(function () {
+                $("#content").load("pages/login.html");
+            });
+            // $("#wishlist").click(function () {
+            //     $("#content").load("pages/wishlist.html");
+            // });
+            // $("#cart").click(function () {
+            //     $("#content").load("pages/cart.html");
+            // });
+        });
+    </script>
+    <link rel="stylesheet" href="css/all.css">
 </head>
 
 <body>
-    <div class="header">
-        <h1>hello</h1>
+    <div class="header container">
+        <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/d%E2%80%99Perfume@2x.png?raw=true"
+            alt="">
+        <ul class='menu'>
+            <li><a href="#" id="product"><span class="material-icons">
+                        store
+                    </span> Product</a></li>
+            <li><a href="#" id='login'><span class="material-icons">
+                        person
+                    </span>Log in</a></li>
+            <li><a href="#"><span class="material-icons">
+                        favorite
+                    </span>Wishlist</a></li>
+            <li><a href="#"><span class="material-icons">
+                        shopping_cart
+                    </span>Cart(3)</a></li>
+        </ul>
+    </div>
+
+    <div id="content"></div>
+
+    <div class="subscribe container">
+        <ul>
+            <li>
+                <h2>記得</h2>
+            </li>
+            <li>
+                <h2>訂閱以獲取更多資訊！</h2>
+            </li>
+            <li><a href="#"> <input type="text" placeholder="Your email address">Subsrcibe</a>
+            </li>
+        </ul>
+    </div>
+    <div class="footer container">
+        <h6><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/d%E2%80%99Perfumewhite@2x.png?raw=true"
+                alt=""> © 2020. All Rights Reserved.</h6>
+        <ul>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
     </div>
 </body>
 

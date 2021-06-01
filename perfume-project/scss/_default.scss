@@ -1,0 +1,50 @@
+html * {
+    font-family: $fontFamily;
+    text-decoration: none;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: left;
+    font-size: $fs-h1;
+}
+h2 {
+    text-align: left;
+    font-size: $fs-h2;
+}
+h3 {
+    text-align: left;
+    font-size: $fs-h3;
+}
+h4,
+a {
+    text-align: left;
+    font-size: $fs-h4;
+}
+h5 {
+    text-align: left;
+    font-size: $fs-h5;
+}
+h6 {
+    text-align: left;
+    font-size: $fs-h6;
+}
+
+p:lang(en) {
+    font-size: $fs-p-en;
+}
+
+p:lang(ch) {
+    font-size: $fs-p-ch;
+    font-family: $fontFamily-PF;
+}
+
+@mixin imgSize {
+    max-width: 100%;
+    height: auto;
+}
