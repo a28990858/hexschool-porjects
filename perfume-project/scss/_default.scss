@@ -44,6 +44,24 @@ p:lang(ch) {
     font-family: $fontFamily-PF;
 }
 
+@mixin content-area {
+    margin: 0 auto;
+    width: 60%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin discount($marginTop, $marginLeft) {
+    margin-top: $marginTop;
+    span {
+        text-decoration: line-through;
+        color: $gray;
+        margin-left: $marginLeft;
+    }
+}
+
 @mixin imgSize {
     max-width: 100%;
     height: auto;

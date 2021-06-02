@@ -1,0 +1,13 @@
+.top-bar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: $brown;
+    padding-left: 20%;
+    height: 52px;
+    margin-bottom: 80px;
+    li a {
+        margin-right: 28px;
+        color: white;
+    }
+}

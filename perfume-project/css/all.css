@@ -220,7 +220,7 @@ p:lang(ch) {
   padding: 10px;
 }
 .header .menu a span {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .subscribe {
@@ -489,11 +489,9 @@ p:lang(ch) {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-.promote ul .discount {
   margin-top: 16px;
 }
-.promote ul .discount span {
+.promote ul span {
   text-decoration: line-through;
   color: #8d8d8d;
   margin-left: 8px;
@@ -578,4 +576,137 @@ p:lang(ch) {
 }
 .content-en ul h4 {
   margin-bottom: 16px;
+}
+
+.top-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #916019;
+  padding-left: 20%;
+  height: 52px;
+  margin-bottom: 80px;
+}
+.top-bar li a {
+  margin-right: 28px;
+  color: white;
+}
+
+.login {
+  margin: 0 auto;
+  width: 60%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.login img {
+  width: 730px;
+  height: auto;
+}
+.login .input-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  height: 250px;
+  margin-left: 30px;
+}
+.login .input-area input {
+  width: 350px;
+  height: 38px;
+}
+.login .input-area .fg-pwd {
+  width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.login .input-area .fg-pwd a {
+  color: #916019;
+}
+.login .input-area .fg-pwd .btn {
+  color: #916019;
+  background: white;
+  border: 1px solid #916000;
+}
+.login .input-area .fg-pwd button {
+  color: white;
+  background: #916019;
+  border: 1px solid #916000;
+}
+
+.product-list {
+  margin: 0 auto;
+  width: 60%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.product-list img {
+  width: 255px;
+  height: 255px;
+}
+.product-list li {
+  margin-top: 0px;
+}
+.product-list li span {
+  text-decoration: line-through;
+  color: #8d8d8d;
+  margin-left: 0px;
+}
+.product-list li h3 {
+  padding-bottom: 10px;
+}
+.product-list li .icon span {
+  text-decoration: none;
+  color: #916019;
+}
+
+.steps {
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.steps a {
+  margin-right: 20px;
 }

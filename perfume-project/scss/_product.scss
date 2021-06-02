@@ -1,0 +1,27 @@
+.product-list {
+    @include content-area;
+    img {
+        width: 255px;
+        height: 255px;
+    }
+    li {
+        @include discount(0px, 0px);
+        h3 {
+            padding-bottom: 10px;
+        }
+        .icon span {
+            text-decoration: none;
+            color: $brown;
+        }
+    }
+}
+
+.steps {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+        margin-right: 20px;
+    }
+}
