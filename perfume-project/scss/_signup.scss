@@ -1,0 +1,103 @@
+.signup-form {
+    @include content-area;
+    align-items: flex-start;
+    justify-content: space-between;
+    .side-bar {
+        margin-right: 109px;
+        color: #848484;
+        h4 {
+            margin-bottom: 28px;
+        }
+        li {
+            margin-bottom: 24px;
+            a {
+                display: block;
+                color: #848484;
+                font-size: $fs-h5;
+                padding: 2px;
+            }
+            a:hover {
+                border-bottom: 2px solid $brown;
+            }
+        }
+    }
+    .profile {
+        color: #818a91;
+        .personal-change,
+        .pwd-change {
+            color: black;
+            width: 635px;
+            border-bottom: 1px solid #818a91;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+        }
+        button {
+            background: $brown;
+            color: white;
+            width: 160px;
+            height: 38px;
+            border: none;
+            border-radius: 4px;
+        }
+        li {
+            margin-bottom: 36px;
+            .mg-r {
+                margin-right: 31px;
+                display: inline;
+            }
+            input {
+                width: 350px;
+                height: 38px;
+                color: #818a91;
+            }
+            select {
+                width: 160px;
+                height: 38px;
+                color: #818a91;
+            }
+            .gender {
+                width: 59px;
+                height: 38px;
+            }
+        }
+        .mg-l {
+            margin-left: 95px;
+        }
+        .checkbox {
+            width: 15px;
+            height: 15px;
+            color: $brown;
+        }
+        .password {
+            width: 446px;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .member {
+        margin-left: 30px;
+        width: 255px;
+        color: #818a91;
+        h5 {
+            margin-bottom: 9px;
+        }
+        .material-icons {
+            font-size: 16px;
+            color: black;
+        }
+        span {
+            margin-left: 6px;
+        }
+        .member-details {
+            display: flex;
+            justify-content: flex-start;
+            li {
+                margin-right: 31px;
+                margin-top: 16px;
+            }
+        }
+        p {
+            color: #a5a5a5;
+        }
+    }
+}

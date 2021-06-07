@@ -358,9 +358,9 @@ p:lang(ch) {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .content img {
   width: 555px;
@@ -405,9 +405,9 @@ p:lang(ch) {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 60px;
 }
 .content-long img {
@@ -530,9 +530,9 @@ p:lang(ch) {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .content-en img {
   width: 555px;
@@ -608,9 +608,9 @@ p:lang(ch) {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .login img {
   width: 730px;
@@ -671,9 +671,9 @@ p:lang(ch) {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .product-list img {
   width: 255px;
@@ -709,4 +709,132 @@ p:lang(ch) {
 }
 .steps a {
   margin-right: 20px;
+  color: black;
+}
+
+.signup-form {
+  margin: 0 auto;
+  width: 60%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.signup-form .side-bar {
+  margin-right: 109px;
+  color: #848484;
+}
+.signup-form .side-bar h4 {
+  margin-bottom: 28px;
+}
+.signup-form .side-bar li {
+  margin-bottom: 24px;
+}
+.signup-form .side-bar li a {
+  display: block;
+  color: #848484;
+  font-size: 16px;
+  padding: 2px;
+}
+.signup-form .side-bar li a:hover {
+  border-bottom: 2px solid #916019;
+}
+.signup-form .profile {
+  color: #818a91;
+}
+.signup-form .profile .personal-change,
+.signup-form .profile .pwd-change {
+  color: black;
+  width: 635px;
+  border-bottom: 1px solid #818a91;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+}
+.signup-form .profile button {
+  background: #916019;
+  color: white;
+  width: 160px;
+  height: 38px;
+  border: none;
+  border-radius: 4px;
+}
+.signup-form .profile li {
+  margin-bottom: 36px;
+}
+.signup-form .profile li .mg-r {
+  margin-right: 31px;
+  display: inline;
+}
+.signup-form .profile li input {
+  width: 350px;
+  height: 38px;
+  color: #818a91;
+}
+.signup-form .profile li select {
+  width: 160px;
+  height: 38px;
+  color: #818a91;
+}
+.signup-form .profile li .gender {
+  width: 59px;
+  height: 38px;
+}
+.signup-form .profile .mg-l {
+  margin-left: 95px;
+}
+.signup-form .profile .checkbox {
+  width: 15px;
+  height: 15px;
+  color: #916019;
+}
+.signup-form .profile .password {
+  width: 446px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.signup-form .member {
+  margin-left: 30px;
+  width: 255px;
+  color: #818a91;
+}
+.signup-form .member h5 {
+  margin-bottom: 9px;
+}
+.signup-form .member .material-icons {
+  font-size: 16px;
+  color: black;
+}
+.signup-form .member span {
+  margin-left: 6px;
+}
+.signup-form .member .member-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.signup-form .member .member-details li {
+  margin-right: 31px;
+  margin-top: 16px;
+}
+.signup-form .member p {
+  color: #a5a5a5;
 }

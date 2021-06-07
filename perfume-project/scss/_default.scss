@@ -9,6 +9,7 @@ html * {
     box-sizing: border-box;
 }
 
+// Font Size
 h1 {
     text-align: left;
     font-size: $fs-h1;
@@ -50,7 +51,7 @@ p:lang(ch) {
     height: auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 @mixin discount($marginTop, $marginLeft) {
