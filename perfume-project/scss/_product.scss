@@ -1,9 +1,13 @@
 .product-list {
     @include content-area;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 58px;
     img {
         width: 255px;
         height: 255px;
     }
+
     li {
         @include discount(0px, 0px);
         h3 {

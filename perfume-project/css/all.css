@@ -218,6 +218,7 @@ p:lang(ch) {
   color: #8d8d8d;
   text-align: center;
   padding: 10px;
+  border: none;
 }
 .header .menu a span {
   font-size: 20px;
@@ -349,18 +350,12 @@ p:lang(ch) {
 }
 
 .content {
-  margin: 0 auto;
   width: 60%;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin: 0 auto;
 }
 .content img {
   width: 555px;
@@ -396,18 +391,12 @@ p:lang(ch) {
 }
 
 .content-long {
-  margin: 0 auto;
   width: 60%;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin: 0 auto;
   margin-bottom: 60px;
 }
 .content-long img {
@@ -521,18 +510,12 @@ p:lang(ch) {
 }
 
 .content-en {
-  margin: 0 auto;
   width: 60%;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin: 0 auto;
 }
 .content-en img {
   width: 555px;
@@ -599,18 +582,12 @@ p:lang(ch) {
 }
 
 .login {
-  margin: 0 auto;
   width: 60%;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin: 0 auto;
 }
 .login img {
   width: 730px;
@@ -662,18 +639,19 @@ p:lang(ch) {
 }
 
 .product-list {
-  margin: 0 auto;
   width: 60%;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0 auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 58px;
 }
 .product-list img {
   width: 255px;
@@ -713,18 +691,12 @@ p:lang(ch) {
 }
 
 .signup-form {
-  margin: 0 auto;
   width: 60%;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin: 0 auto;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -837,4 +809,85 @@ p:lang(ch) {
 }
 .signup-form .member p {
   color: #a5a5a5;
+}
+
+.product-chanel {
+  width: 60%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.product-chanel .img-w {
+  width: 730px;
+  height: auto;
+}
+.product-chanel .img-l {
+  width: 350px;
+  height: auto;
+}
+.product-chanel .mg-r {
+  margin-right: 26px;
+}
+.product-chanel .mb-1 {
+  margin-bottom: 8px;
+}
+.product-chanel .mb-4 {
+  margin-bottom: 32px;
+}
+.product-chanel .mb-20 {
+  margin-bottom: 20px;
+}
+.product-chanel .side-imgs {
+  width: 730px;
+  margin-right: 30px;
+}
+.product-chanel .desc {
+  width: 350px;
+}
+.product-chanel .desc .desc-t {
+  margin-bottom: 80px;
+}
+.product-chanel .desc .desc-t h2 {
+  text-align: left;
+  padding-bottom: 15px;
+}
+.product-chanel .desc .desc-t .add-cart a {
+  width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #916019;
+  border: 1px solid #916000;
+  border-radius: 2%;
+  color: white;
+}
+.product-chanel .desc .desc-t .add-cart a select {
+  width: 50%;
+  height: 60px;
+  margin-right: 35px;
+}
+.product-chanel .desc .desc-t .add-favorite a {
+  color: black;
+}
+.product-chanel .desc .desc-t .add-favorite span {
+  color: #916019;
+  font-size: 20px;
+}
+.product-chanel .desc .desc-b h5 {
+  font-weight: bold;
+  margin-bottom: 8px;
 }
