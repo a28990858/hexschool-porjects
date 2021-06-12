@@ -47,16 +47,8 @@ const undoneTake = (index, task) => `
   </div>
 `;
 
-// Header Buttons
-const headerBtns = document.querySelector(".content-btn");
-if (tasks.length > 0) {
-  headerBtns.innerHTML = `
-  <a href="#" class="filter-all">全部</a><a href="#" class="filter-undone" id="undone">待完成</a><a href="#" class="filter-done">已完成</a>
-  `;
-}
-
-const ft = document.querySelector(".content-footer");
 // Footer
+const ft = document.querySelector(".content-footer");
 function footer(count, key) {
   switch (key) {
     case "undone":
@@ -107,6 +99,7 @@ function rederData() {
 }
 
 rederData();
+let tab = "filter-all";
 
 // Add Task
 const addBtn = document.querySelector(".btn");
@@ -124,108 +117,103 @@ addBtn.addEventListener("click", (e) => {
   });
   text.value = "";
   content.style.display = "block";
+  switchTab();
+});
+
+function undoneTaskList() {
+  let str = "";
+  let count = 0;
+  selectTab(filterUndone);
+  tasks.forEach((task, index) => {
+    if (!task.done) {
+      str += undoneTake(index, task.task);
+      count += 1;
+    }
+  });
+  contentList.innerHTML = str;
+  footer(count, "undone");
+  tab = "filter-undone";
+}
+
+function doneTaskList() {
+  let str = "";
+  tasks.forEach((task, index) => {
+    selectTab(filterDone);
+    if (task.done) {
+      str += doneTake(index, task.task);
+    }
+  });
+  contentList.innerHTML = str;
+  footer(0, "done");
+  tab = "filter-done";
+}
+
+// Filter for All
+const filterAll = document.querySelector(".filter-all");
+filterAll.addEventListener("click", (e) => {
+  selectTab(filterAll);
+  tab = "filter-all";
   rederData();
 });
 
-let tab = "filter-all";
-if (tasks.length > 0) {
-  function undoneTaskList() {
-    let str = "";
-    let count = 0;
-    selectTab(filterUndone);
-    tasks.forEach((task, index) => {
-      if (!task.done) {
-        str += undoneTake(index, task.task);
-        count += 1;
-      }
-    });
-    contentList.innerHTML = str;
-    footer(count, "undone");
-    tab = "filter-undone";
-  }
+// Filter for undone
+const filterUndone = document.querySelector(".filter-undone");
+filterUndone.addEventListener("click", undoneTaskList);
 
-  function doneTaskList() {
-    let str = "";
-    tasks.forEach((task, index) => {
-      selectTab(filterDone);
-      if (task.done) {
-        str += doneTake(index, task.task);
-      }
-    });
-    contentList.innerHTML = str;
-    footer(0, "done");
-    tab = "filter-done";
-  }
+// Filter for done
+const filterDone = document.querySelector(".filter-done");
+filterDone.addEventListener("click", doneTaskList);
 
-  // Filter for All
-  const filterAll = document.querySelector(".filter-all");
-  filterAll.addEventListener("click", (e) => {
-    selectTab(filterAll);
-    tab = "filter-all";
-    rederData();
-  });
-
-  // Filter for undone
-  const filterUndone = document.querySelector(".filter-undone");
-  filterUndone.addEventListener("click", undoneTaskList);
-
-  // Filter for done
-  const filterDone = document.querySelector(".filter-done");
-  filterDone.addEventListener("click", doneTaskList);
-
-  // Change color for chose tab
-  function selectTab(tab) {
-    filterAll.style.color = "#9f9a91";
-    filterUndone.style.color = "#9f9a91";
-    filterDone.style.color = "#9f9a91";
-    tab.style.color = "#333333";
-  }
-
-  const list = document.querySelector(".content-list");
-  list.addEventListener("click", (e) => {
-    let key = e.target.getAttribute("class");
-    let taskDescIdx = e.target.parentNode.parentNode.getAttribute("task-num");
-    let index =
-      e.target.parentNode.parentNode.parentNode.getAttribute("task-num");
-    switch (key) {
-      case "fa fa-times fa-lg":
-        // Delete Task
-        tasks.splice(index, 1);
-        rederData();
-        break;
-      case "task-desc":
-        checkTask(taskDescIdx);
-        break;
-      case "fa fa-check":
-        checkTask(index);
-        break;
-      case "fa fa-square-o":
-        checkTask(index);
-        break;
-      case "desc":
-        checkTask(index);
-        break;
-      default:
-        return;
-    }
-  });
-
-  // Clean Button
-  ft.addEventListener("click", (e) => {
-    let key = e.target.getAttribute("class");
-    if (key == "clean") {
-      tasks = tasks.filter((task) => task.done == false);
-    }
-    rederData();
-  });
+// Change color for chose tab
+function selectTab(tab) {
+  filterAll.style.color = "#9f9a91";
+  filterUndone.style.color = "#9f9a91";
+  filterDone.style.color = "#9f9a91";
+  tab.style.color = "#333333";
 }
 
+// Clickk on task to change status
+const list = document.querySelector(".content-list");
+list.addEventListener("click", (e) => {
+  let key = e.target.getAttribute("class");
+  let taskDescIdx = e.target.parentNode.parentNode.getAttribute("task-num");
+  let index =
+    e.target.parentNode.parentNode.parentNode.getAttribute("task-num");
+  switch (key) {
+    case "fa fa-times fa-lg":
+      // Delete Task
+      tasks.splice(index, 1);
+      rederData();
+      break;
+    case "task-desc":
+      checkTask(taskDescIdx);
+      break;
+    case "fa fa-check":
+      checkTask(index);
+      break;
+    case "fa fa-square-o":
+      checkTask(index);
+      break;
+    case "desc":
+      checkTask(index);
+      break;
+    default:
+      return;
+  }
+});
+
+// Change the status of task and keep in same tab
 function checkTask(index) {
   tasks.forEach((task, i) => {
     if (i == index) {
       task.done = !task.done;
     }
   });
+  switchTab();
+}
+
+// Switch tab
+function switchTab() {
   switch (tab) {
     case "filter-all":
       rederData();
@@ -241,3 +229,12 @@ function checkTask(index) {
       break;
   }
 }
+
+// Clean up Button
+ft.addEventListener("click", (e) => {
+  let key = e.target.getAttribute("class");
+  if (key == "clean") {
+    tasks = tasks.filter((task) => task.done == false);
+  }
+  switchTab();
+});
